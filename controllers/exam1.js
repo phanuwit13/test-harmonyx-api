@@ -2,8 +2,17 @@ exports.calculateAnswer = (req, res, next) => {
 
   return (req, res, next) => {
     try {
-      const num = [2, 7, 11, 12]
-      const target = 9
+      const num = req.body.num
+      const target = req.body.target
+
+      if (!Array.isArray(num)) {
+        res.data = {
+          success: 'fail',
+          data: null,
+          message: 'กรุณาใส่ num เป็นตัวเลขอาร์เร',
+        }
+        next()
+      }
 
       num.forEach((item) => {
         if (isNaN(item)) {
@@ -16,7 +25,7 @@ exports.calculateAnswer = (req, res, next) => {
         }
       })
 
-      if(isNaN(target)){
+      if (isNaN(target)) {
         res.data = {
           success: 'fail',
           data: null,
