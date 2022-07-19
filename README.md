@@ -16,17 +16,15 @@ npm run start:local or npm run start
 
 ### exam 1
 
-#### local
 Method POST
-```
-http://localhost:4020/api/exam-1/calculate-answer
-```
-#### server
-Method POST
-```
-https://test-harmonyx.herokuapp.com/api/exam-1/calculate-answer
-```
-payload json
+
+| Server | Path |
+| ------ | ------ |
+| Local | `http://localhost:4020/api/exam-1/calculate-answer`|
+| Heroku | `https://test-harmonyx.herokuapp.com/api/exam-1/calculate-answer` |
+| Zeet | `https://harmonyx-api-main-wgc6h2sscq-wm.a.run.app/api/exam-1/calculate-answer` |
+
+Payload json
 ```
 {
   "num": [1,2,4,5, 2, 8],
@@ -36,29 +34,24 @@ payload json
 
 ### exam 2
 
-#### local
 Method GET
-```
-http://localhost:4020/api/exam-2/change-money?price=234&pay=400
-```
-#### server
-Method GET
-```
-https://test-harmonyx.herokuapp.com/api/exam-2/change-money?price=234&pay=400
-```
+
+| Server | Path |
+| ------ | ------ |
+| Local | `http://localhost:4020/api/exam-2/change-money?price=234&pay=400`|
+| Heroku | `https://test-harmonyx.herokuapp.com/api/exam-2/change-money?price=234&pay=400` |
+| Zeet | `https://harmonyx-api-main-wgc6h2sscq-wm.a.run.app/api/exam-2/change-money?price=234&pay=400` |
 
 ### exam 3
 
-#### local
 Method POST
-```
-http://localhost:4020/api/exam-3/calculate-price
-```
-#### server
-Method POST
-```
-https://test-harmonyx.herokuapp.com/api/exam-3/calculate-price
-```
+
+| Server | Path |
+| ------ | ------ |
+| Local | `http://localhost:4020/api/exam-3/calculate-price`|
+| Heroku | `https://test-harmonyx.herokuapp.com/api/exam-3/calculate-price` |
+| Zeet | `https://harmonyx-api-main-wgc6h2sscq-wm.a.run.app/api/exam-3/calculate-price` |
+
 payload json
 ```
 [
