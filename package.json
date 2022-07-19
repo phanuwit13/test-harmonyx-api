@@ -1,0 +1,27 @@
+{
+  "name": "test-harmonyx-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run server.js",
+    "start:local": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phanuwit13/test-harmonyx-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phanuwit13/test-harmonyx-api/issues"
+  },
+  "homepage": "https://github.com/phanuwit13/test-harmonyx-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "express-form-data": "^2.0.18",
+    "nodemon": "^2.0.19"
+  }
+}
