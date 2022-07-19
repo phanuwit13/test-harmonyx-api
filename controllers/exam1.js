@@ -42,6 +42,8 @@ exports.calculateAnswer = (req, res, next) => {
           if (newNum[i] + newNum[j] === target) {
             answer.push(i)
             answer.push(j)
+            i = num.length
+            j = i
           }
         }
       }
